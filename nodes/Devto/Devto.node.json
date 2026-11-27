@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-devto.devto",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/akshatcoder-hash/n8n-nodes-devto#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/akshatcoder-hash/n8n-nodes-devto#readme"
+			}
+		]
+	}
+}

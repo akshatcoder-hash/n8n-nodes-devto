@@ -1,0 +1,45 @@
+{
+	"name": "DEV Community - latest JavaScript articles",
+	"nodes": [
+		{
+			"parameters": {},
+			"id": "4f5a7db4-5ba4-4e3e-aaf0-5f58f04d5701",
+			"name": "When clicking Test workflow",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [0, 0]
+		},
+		{
+			"parameters": {
+				"resource": "article",
+				"operation": "getAll",
+				"returnAll": false,
+				"limit": 5,
+				"filters": {
+					"tag": "javascript"
+				}
+			},
+			"id": "c8f6a9d7-90ec-4cb6-a679-3e67e7375ec2",
+			"name": "Get JavaScript articles",
+			"type": "n8n-nodes-devto.devto",
+			"typeVersion": 1,
+			"position": [240, 0]
+		}
+	],
+	"connections": {
+		"When clicking Test workflow": {
+			"main": [
+				[
+					{
+						"node": "Get JavaScript articles",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"active": false,
+	"settings": {},
+	"pinData": {}
+}
