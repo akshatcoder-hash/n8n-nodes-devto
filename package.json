@@ -1,19 +1,19 @@
 {
-	"name": "n8n-nodes-starter",
+	"name": "n8n-nodes-devto",
 	"version": "0.1.0",
-	"description": "Starter repository for building n8n community nodes",
+	"description": "n8n community node for the DEV Community (Forem) API",
 	"license": "MIT",
-	"homepage": "https://docs.n8n.io/connect/create-nodes/overview",
+	"homepage": "https://github.com/akshatcoder-hash/n8n-nodes-devto#readme",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "n8n",
-		"email": "example@example.com"
+		"name": "Akshat Sharma",
+		"email": "akshatcoder@outlook.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/n8n-io/n8n-nodes-starter.git"
+		"url": "https://github.com/akshatcoder-hash/n8n-nodes-devto.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
@@ -31,12 +31,10 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/GithubIssuesApi.credentials.js",
-			"dist/credentials/GithubIssuesOAuth2Api.credentials.js"
+			"dist/credentials/DevtoApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/Example/Example.node.js",
-			"dist/nodes/GithubIssues/GithubIssues.node.js"
+			"dist/nodes/Devto/Devto.node.js"
 		]
 	},
 	"devDependencies": {
